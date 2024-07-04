@@ -86,9 +86,10 @@ header form {
 .fav {
   margin-top: 82rem;
   max-height: 80%;
-  overflow: scroll;
-  border: 2px solid var(--table-border);
+  overflow: auto;
+  border: 1px solid var(--table-border);
   border-radius: 12rem;
+  
 }
 
 table {  
@@ -149,3 +150,12 @@ tbody tr:nth-child(even) {
 }
 
 
+/* Estilização da barra de rolagem personalizada usando -webkit-scrollbar */
+.fav::-webkit-scrollbar {
+  width: 6px;
+}
+
+.fav::-webkit-scrollbar-thumb {
+ background-color: var(--table-border);
+  border-radius: 10px;
+}
