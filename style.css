@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: clamp(4%, 2vw, 6.25%);
+
+  --bg-color: #000;
+  --text-color: #e1e1e6;
+  --base-white: #fff;
+  --color-button: #f75a68;
+  --bg-button-fav: #065e7c;
+  --bg-row-table-head: #092d38;
+  --bg-second-row: hsla(194, 61%, 6%, 50%);
+  --bg-input-and-first-row: #06181c;
+  --table-border: #4a808c;
+  --placeholder-text: #7c7c8a;
+}
+
+body * {
+  font-size: 16rem;
+  font-family: "Roboto", sans-serif;
+}
+
+#app {
+  background-color: var(--bg-color);
+  height: 100vh;
+  padding: 116rem 160rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header input {
+  border: none;
+  background: var(--bg-input-and-first-row);
+  padding: 16rem;
+  width: 462rem;
+  border-radius: 5rem;
+}
+
+header input::placeholder {
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 16rem;
+
+  color: var(--placeholder-text);
+}
+
+header form {
+  display: flex;
+  gap: 8rem;
+}
+
+.favButton {
+  display: flex;
+  gap: 8rem;
+  background-color: var(--bg-button-fav);
+  color: var(--base-white);
+  padding: 12rem 32rem;
+  border: none;
+  border-radius: 5rem;
+  font-weight: 700;
+  font-size: 14rem;
+  line-height: 24rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.fav {
+  margin-top: 82rem;
+  max-height: 80%;
+  overflow: scroll;
+  border: 2px solid var(--table-border);
+  border-radius: 12rem;
+}
+
+table {  
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: var(--bg-row-table-head);
+}
+
+.gridTable tr {
+  
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  font-weight: 700;
+  font-size: 20rem;
+  line-height: 32rem;
+  color: var(--text-color);
+  place-items: center start;
+  
+  padding: 16rem 40rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+}
+
+.user a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.user img {
+  width: 56rem;
+  height: 56rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--bg-input-and-first-row);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--bg-second-row);
+}
+
+.remove {
+  background: none;
+  border: none;
+  color: var(--color-button);
+  font-weight: 700;
+  font-size: 20rem;
+  line-height: 32rem;
+}
+
+
