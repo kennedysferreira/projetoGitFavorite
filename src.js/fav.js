@@ -14,8 +14,14 @@ export class Favorites {
     try {
       const userExists = this.entries.find((entry) => entry.login === username);
       const user = await GitHubUser.search(username);
-      if (userExists || username == "") {
+      if (userExists) {
         throw new Error("Usuario já cadastrado");
+      }
+      if (username == "") {
+        throw new Error("Digite um username")
+      }
+      if (user.login === undefined) {
+        throw new Error("Usuario não existe")
       }
       
       this.entries = [user, ...this.entries];
