@@ -14,11 +14,12 @@
   <div id="app">
     <header>
       <img src="./assets/Logo.svg" alt="logo git favorite">
-      <form action="#">
+      <div class="search">
         <label for="favInput" class="sr-only">Digite o Github username que quer favoritar</label>
         <input type="text" id="favInput" placeholder="Digite o Github username que quer favoritar">
         <button class="favButton"><img src="/assets/Vector.svg" alt=""> FAVORITAR</button>
-      </form>
+      </div>
+
     </header>
     <main class="fav noFavorites">
       <table>
@@ -30,28 +31,15 @@
             <th>Ação</th>
           </tr>
         </thead>
-       
-          <tbody class="gridTable ">  
-            <tr>
-              <td class="user">
-                <img src="" alt="">
-                <a href="">
-                  <p>Kennedy</p>
-                  <span>kennedysf</span>
-                </a>
-              <td>20</td>
-              <td>12334</td>
-              <td><button class="remove">Remover</button></td>
-              </td>
-              </tr>
-              
-          </tbody>
 
-          <div class="displayNoFavorite">
-            <img src="/assets/Estrela.svg" alt="">
-            <h1>Nenhum favorito ainda</h1>
-          </div>
-        
+        <tbody class="gridTable ">
+        </tbody>
+
+        <div class="displayNoFavorite">
+          <img src="/assets/Estrela.svg" alt="">
+          <h1>Nenhum favorito ainda</h1>
+        </div>
+
       </table>
     </main>
   </div>

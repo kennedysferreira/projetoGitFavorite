@@ -54,6 +54,7 @@ header input {
   padding: 16rem;
   width: 462rem;
   border-radius: 5rem;
+  color: var(--text-color);
 }
 
 header input::placeholder {
@@ -64,7 +65,7 @@ header input::placeholder {
   color: var(--placeholder-text);
 }
 
-header form {
+.search {
   display: flex;
   gap: 8rem;
 }
