@@ -11,7 +11,6 @@ This project allows you to favorite GitHub users, storing their data locally and
 - If the user is already in the list, an error message is displayed.
 - If the user does not exist, an error message is displayed.
 - The new user is saved in the `localStorage` and added to the list.
-*** Translated with www.DeepL.com/Translator (free version) ***
 
 
 
@@ -30,7 +29,7 @@ This project allows you to favorite GitHub users, storing their data locally and
 ### 🖥️ Dynamic Interface
 - The list of users is rendered dynamically in the DOM.
 - Each entry displays the user's photo, name, login, number of repositories and followers.
-*** Translated with www.DeepL.com/Translator (free version) ***
+
 
 
 
@@ -55,5 +54,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Project link: https://github.com/kennedysferreira/projetoGitFavorite
 
-*** Translated with www.DeepL.com/Translator (free version) ***
+
 
