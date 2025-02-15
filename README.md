@@ -1,9 +1,7 @@
 # GitFavorite
 #### Video Demo:  <[URL HERE](https://youtu.be/5-OgUF-RRGo)>
 
-This project allows you to favorite GitHub users, storing their data locally and displaying important information such as repositories and followers.
-
-## Features
+#### Description:
 
 ### 📌 Add User
 - The user can enter a GitHub username in the search bar.
