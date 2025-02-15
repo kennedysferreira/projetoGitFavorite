@@ -2,6 +2,10 @@
 #### Video Demo:  <[URL HERE](https://youtu.be/5-OgUF-RRGo)>
 
 #### Description:
+GitHub Favorites is a web application that allows you to save and manage favorite GitHub profiles in a practical way. With an intuitive interface, you can add users, view information such as the number of repositories and followers, and store everything locally for quick access whenever you need it. In addition, the application features automatic list updating, user removal with confirmation and data persistence in the browser. Simply enter a username, add it to the list and follow your favorite profiles with ease.
+
+
+
 
 ### 📌 Add User
 - The user can enter a GitHub username in the search bar.
